@@ -1,5 +1,7 @@
 # Základy programování (PROGINTRO)
 
+pro spuštění app.py pužijte prikaz python/python3
+
 ## Témata
 
 1. [Kompilace a verzování](topics/01-compilation-versioning-ides/README.md)
