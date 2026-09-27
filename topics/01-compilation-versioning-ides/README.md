@@ -49,6 +49,10 @@ if __name__ == "__main__":
 ```
 Pokud vám zbude čas, věnujte ho pochopení a vylepšení programu výše.
 
+## Dodatečné materiály
+
+- [Shrnutí cvičení](additional_materials/summary.md)
+
 ## Zdroje
 
 - [Pro Git, 2nd Edition](https://git-scm.com/book/en/v2)

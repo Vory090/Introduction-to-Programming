@@ -1,29 +1,13 @@
 # Hledání největší hodnoty
 
-Navrhněte algoritmus, který načte **pět čísel** a vypíše největší z nich.
-Nepoužívejte vestavěnou funkci `max()`. Cílem je procvičit průběžné
-zpracování vstupů: program si pamatuje dosud největší hodnotu a s každým
-novým číslem ji případně aktualizuje.
+Navrhněte vývojový diagram algoritmu, který načte **pět čísel** a vypíše
+největší z nich bez použití vestavěné funkce `max()`. Algoritmus nejprve načte
+první číslo a uloží je jako dosud největší hodnotu. Potom postupně načítá
+zbývající čtyři čísla, každé porovná s dosavadním maximem a v případě potřeby
+maximum nahradí. Po zpracování všech pěti čísel je vypíše.
 
 Největší hodnotu neinicializujte nulou — všechna zadaná čísla mohou být
 záporná. Jako první hodnotu proto použijte první skutečně načtené číslo.
-
-## Vývojový diagram
-
-```mermaid
-flowchart TD
-    start([Start]) --> first["Načti první číslo"]
-    first --> init["largest = první číslo<br/>i = 2"]
-    init --> loop{"i <= 5?"}
-    loop -- ne --> output["Vypiš largest"]
-    output --> stop([Konec])
-    loop -- ano --> read["Načti x"]
-    read --> compare{"x > largest?"}
-    compare -- ano --> replace["largest = x"]
-    compare -- ne --> increment["i = i + 1"]
-    replace --> increment
-    increment --> loop
-```
 
 ## Pseudokód
 
@@ -58,3 +42,23 @@ print("Largest value:", largest)
 
 Upravte algoritmus tak, aby zároveň našel nejmenší hodnotu a pozici prvního
 výskytu největší hodnoty.
+
+<details>
+<summary>Řešení – vývojový diagram</summary>
+
+```mermaid
+flowchart TD
+    start([Start]) --> first["Načti první číslo"]
+    first --> init["largest = první číslo<br/>i = 2"]
+    init --> loop{"i <= 5?"}
+    loop -- ne --> output["Vypiš largest"]
+    output --> stop([Konec])
+    loop -- ano --> read["Načti x"]
+    read --> compare{"x > largest?"}
+    compare -- ano --> replace["largest = x"]
+    compare -- ne --> increment["i = i + 1"]
+    replace --> increment
+    increment --> loop
+```
+
+</details>

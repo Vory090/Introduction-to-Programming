@@ -1,8 +1,8 @@
 # Základy návrhu algoritmů
 
 ## Prerekvizity
-- Schonpost používat Git
-- Schopnost používat nějaké IDE pro psaní a testování Pythoních programů
+- Schopnost používat Git
+- Schopnost používat nějaké IDE pro psaní a testování programů v Pythonu
 
 ## Cíle
 
@@ -25,6 +25,11 @@ diagramy a základní úvahy o správnosti a časové složitosti.
 [Zadání domácí přípravy](prework/prework.md)
 
 ## Cvičení
+
+U každé úlohy si přečtěte slovní popis algoritmu a prohlédněte jeho pseudokód
+a implementaci v Pythonu. Poté na papír nakreslete vývojový diagram, který
+zachytí pořadí kroků, rozhodování a případné opakování. Teprve potom si na konci
+úlohy rozbalte vzorové řešení v Mermaid a porovnejte je se svým diagramem.
 
 1. [Průměrná hodnota z čísel](lab/average_value.md)
 1. [Převod teploty ze stupňů Celsia](lab/temperature_conversion.md)
